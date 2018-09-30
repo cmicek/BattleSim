@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    
+    <h1>Test</h1>
 
     turn: {{game.turn}}
 
@@ -11,22 +13,20 @@
 </template>
 
 <script>
-
-import Game from './game';
+import Game from "./game";
 
 var game = new Game();
 
 export default {
-  name: 'App',
-  data: function () {
+  name: "App",
+  data: function() {
     return {
       game: game
     };
   },
-  created: function () {
+  created: function() {
     this.game.nextTurn();
   },
   components: {}
 };
-
 </script>
