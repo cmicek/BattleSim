@@ -24,8 +24,6 @@ export default {
     };
   },
   created: function () {
-    console.log('created');
-    console.log(this.game);
     this.game.nextTurn();
   },
   components: {}
