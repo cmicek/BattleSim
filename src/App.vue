@@ -44,6 +44,7 @@ import Game from './game';
 import BuyUnits from './components/BuyUnits';
 import _ from 'lodash';
 
+
 var game = new Game();
 
 export default {
@@ -70,6 +71,7 @@ export default {
       return _.find(game.players, { userControlled: true });
     }
   },
+
   data: function() {
     return {
       game: game,
